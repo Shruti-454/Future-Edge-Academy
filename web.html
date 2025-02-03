@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+    <title>Your Website Title</title>
+</head>
+<body>
+
+    <header>
+        <h1>FutureEdge Academy</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="D:\website.html">Click to login</a></li>
+            <li><a href="D:\website.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Tutor.html">Get a Tutor</a></li>
+            <li><a href="scholarship.html">Apply for scholarship</a></li>
+            <li><a href="#">Get all Notes</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Welcome to FutureEdge Academy!</h2>
+            <div class="slider">
+                <img id="img-1" src="c:\Users\HP\OneDrive\Pictures\Screenshots\Screenshot (413).png" alt="Image 1"/>                
+              </div>
+              <div class="navigation-button">
+                <span class="dot active" onclick="changeSlide(0)"></span>
+                <span class="dot" onclick="changeSlide(1)"></span>
+                <span class="dot" onclick="changeSlide(2)"></span>
+              </div>
+            <p>This is a simple webpage with some content.</p>
+        </section>
+
+        <section>
+            <h2>Featured Products</h2>
+            <!-- Add your product listings here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+    </footer>
+    <script>
+         var imgs = document.querySelectorAll('.slider img');
+    var dots = document.querySelectorAll('.dot');
+    var currentImg = 0; // index of the first image 
+    const interval = 3000; // duration(speed) of the slide
+    </script>
+   
+</body>
+</html>

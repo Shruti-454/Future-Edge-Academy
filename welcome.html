@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillPlex Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0daef3;
+        }
+
+        .navbar {
+            background-color: #053a516b;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: black;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(249, 240, 240);
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .header {
+            background-color: transparent;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .label{
+            color: white;
+            font-size: 18px;
+        }
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        .course-card {
+            background: white;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .course-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .course-card h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .course-card p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="website.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="welcome.html">Courses</a>
+            <a href="#">Subscriptions</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">My Profile
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Public profile</a>
+                <a href="#">My progress</a>
+                <a href="#">Enrollments</a>
+                <a href="#">Privacy </a>
+                <a href="#">User-settings</a>
+                <a href="#">Consultation</a>
+            </div>
+        </div>
+    </div>
+    <div class="header">OUR CORE COURSES</div>
+    <label for="standard">Select your class:</label>
+    <select id="standard">
+        <option value="8" selected>8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+    <div class="courses">
+        <div class="course-card">
+            <img src="math.jpg" alt="Mathematics">
+            <a href="#">
+                <h3>Mathematics</h3>
+            </a>
+            <p>Basic Math, Algebra, Geometry, Trigonometry, Calculus, Statistics</p>
+        </div>
+        <div class="course-card">
+            <img src="science.jpg" alt="Science">
+            <a href="#">
+                <h3>Science</h3>
+            </a>
+            <p>Biology, Chemistry, Physics, Environmental Science</p>
+        </div>
+        <div class="course-card">
+            <img src="english.jpg" alt="English Language Arts">
+            <a href="#">
+                <h3>English Language Arts</h3>
+            </a>
+            <p>Reading, Writing, Literature, Grammar, Vocabulary</p>
+        </div>
+        <div class="course-card">
+            <img src="computer.jpg" alt="Computer Science">
+            <a href="#">
+                <h3>Computer Science</h3>
+            </a>
+            <p>Basic Computing, Coding, Digital Literacy</p>
+        </div>
+        <div class="course-card">
+            <img src="sst.jpg" alt="Social Studies">
+            <a href="#">
+                <h3>Social Studies</h3>
+            </a>
+            <p>History, Geography, Civics, Economics </p>
+        </div>
+        <div class="course-card">
+            <img src="foreign-language.png" alt="Foreign Language">
+            <a href="#">
+                <h3>Foreign Language</h3>
+            </a>
+            <p>Spanish, French, German, Mandarin, Japanese </p>
+        </div>
+    </div>
+</body>
+
+</html>
